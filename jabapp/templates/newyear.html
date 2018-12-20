@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .answer {
+                display: inline-block;
+                margin-top: 200px;
+                font-weight: bold;
+                font-size: 120pt;
+                font-family: Arial, sans-serif;
+                text-decoration: none;
+                color: black;
+                }
+        body {
+            text-align : center;
+            background-size : 200px;
+            background-image:url("https://t1.daumcdn.net/cfile/tistory/2312174653C62FB32F");
+             }
+        /*.myimage{*/
+        /*    width: 150px;*/
+        /*    height: auto;*/
+        /*    }*/
+        
+    </style>
+    
+</head>
+<body>
+    <!--<img class="myimage",src="https://t1.daumcdn.net/cfile/tistory/2312174653C62FB32F"></img>-->
+    <br>
+    {% if day == 1 and month == 1 %}
+        <div class="answer">맞다</div>
+    {% else %}
+        <div class="answer">아니다</div>
+        <br>
+        <div class="answer">D-{{remain}}</div>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .green_window {
+        	display: inline-block;
+        	width: 366px; height: 34px;
+        	border: 3px solid #2db400;
+        	background: white;
+        }
+        .input_text {
+        	width: 348px; height: 21px;
+        	margin: 6px 0 0 9px;
+        	border: 0;
+        	line-height: 21px;
+        	font-weight: bold;
+        	font-size: 16px;
+        	outline: none;
+        }
+        .sch_smit {
+        	width: 54px; height: 40px;
+        	margin: 0; border: 0;
+        	vertical-align: top;
+        	background: #22B600;
+        	color: white;
+        	font-weight: bold;
+        	border-radius: 1px;
+        	cursor: pointer;
+        }
+        .sch_smit:hover {
+        	background: #56C82C;
+        }
+   </style>
+    
+</head>
+<body>
+    <h1>Fake Search</h1>
+    <form action="https://search.naver.com/search.naver">
+        <span class='green_window'>
+            <input type="text" name="query" class="input_text">
+        </span>
+        <input type="submit" class="sch_smit">
+    </form>
+    <br>
+    <form id="google" action="https://www.google.com/search">
+        <input type="text" name="q">
+        <input type="submit">
+    </form>
+    <br>
+    <form id="daum" action="https://search.daum.net/search">
+        <input type="text" name="q">
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
